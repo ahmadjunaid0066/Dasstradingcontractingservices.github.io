@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Company - About Us</title>
+  <!-- Link to Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navbar Styles */
+    .navbar {
+      background-color: transparent;
+      padding: 10px 20px;
+      position: absolute;
+      width: 100%;
+      z-index: 1000;
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar:hover {
+      background-color: #663919;
+    }
+
+    .navbar-brand {
+      float: left;
+      color: white;
+      margin-right: 15px;
+    }
+
+    .navbar-toggler-icon {
+      background-color: white;
+    }
+
+    .navbar-nav {
+      float: right;
+    }
+
+    .navbar-nav a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: inline-block;
+      transition: color 0.3s ease;
+    }
+
+    .navbar-nav a:hover {
+      background-color: #555;
+      color: black;
+    }
+
+   
+
+    @media (max-width: 992px) {
+      .navbar-nav {
+        float: none;
+        text-align: center;
+      }
+
+      .navbar-nav a {
+        display: block;
+        text-align: left;
+        margin-top: 10px;
+      }
+
+      .navbar-toggler .navbar-brand {
+        display: none;
+      }
+
+      .navbar-toggler {
+        background-color: #333;
+      }
+
+      .navbar-toggler-icon {
+        background-color: #993300;
+      }
+
+      .navbar-toggler .navbar-nav {
+        float: right;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .navbar-brand {
+        margin-right: 0;
+      }
+
+      .navbar-toggler {
+        margin: 10px 0;
+      }
+    }
+
+    /* About Us Styles */
+    .about-us {
+      
+      text-align: left;
+    }
+
+    .about-us img {
+      width: 100%;
+      height: 60vh;
+      object-fit: cover;
+    }
+
+    /* projects styles */
+
+    .projects {
+      padding: 50px 0;
+    }
+
+    .project-heading {
+      text-align: center;
+      color: #993300;
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .project-card {
+      margin-bottom: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+
+    #projects-picture {
+      width: 100%;
+      height: 100px;
+    }
+
+    .project-details {
+      padding: 20px;
+    }
+
+    .project-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .project-description {
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .btn-primary {
+      background-color: #993300;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #772200;
+    }
+
+    .add-more-projects {
+      background-color: #ffffff;
+      padding: 50px 0;
+    }
+ 
+  </style>
+</head>
+<body>
+
+    <!-- Container for Navbar and About Us Section -->
+    <div class="container-fluid">
+  
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">
+          <img src="Images/logo1.png" alt="Company Logo" height="80">
+        </a>
+        <!-- Navbar Toggler Icon for Small Screens -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="file:///C:/Users/AhmadJunaid/Desktop/Dass%20Trading%20&%20Contracting%20Services/index.html" style="color: white; font-weight: bold;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="file:///C:/Users/AhmadJunaid/Desktop/Dass%20Trading%20&%20Contracting%20Services/aboutus.html" style="color: white; font-weight: bold;" >About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="file:///C:/Users/AhmadJunaid/Desktop/Dass%20Trading%20&%20Contracting%20Services/services.html" style="color: white; font-weight: bold;">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="file:///C:/Users/AhmadJunaid/Desktop/Dass%20Trading%20&%20Contracting%20Services/projects.html" style="color: white; font-weight: bold;">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white; font-weight: bold;">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="file:///C:/Users/AhmadJunaid/Desktop/Dass%20Trading%20&%20Contracting%20Services/careers.html" style="color: white; font-weight: bold;">Careers</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="file:///C:/Users/AhmadJunaid/Desktop/Dass%20Trading%20&%20Contracting%20Services/contactus.html" style="color: white; font-weight: bold;">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  
+      <!-- About Us Section -->
+      
+      <div class="about-us">
+        <img src="Images/projectsbackground.jpeg" alt="">
+        <!-- Completed Projects Section -->
+        <section class="projects">
+            <div class="container">
+            <h2 class="project-heading">Completed Projects</h2>
+            <div class="row">
+                <!-- Completed Project 1 -->
+                <div class="col-md-3">
+                <div class="project-card">
+                    <img src="Images/service7.jpg" alt="Completed Project 1" id="projects-picture" class="project-image">
+                    <div class="project-details">
+                    <div class="project-title">Salwa Road</div>
+                    <div class="project-description">For Complete Details click on Download Button.</div>
+                    <a href="Projects/sample.pdf" target="_blank" class="btn btn-primary mt-3">Download PDF</a>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="project-card">
+                    <img src="Images/service4.jpg" alt="Completed Project 1" id="projects-picture" class="project-image">
+                    <div class="project-details">
+                        <div class="project-title">Al Rayayan Building</div>
+                        <div class="project-description">For Complete Details click on Download Button.</div>
+                        <a href="Projects/sample.pdf" target="_blank" class="btn btn-primary mt-3">Download PDF</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="project-card">
+                    <img src="Images/service1.jpg" alt="Completed Project 1" id="projects-picture" class="project-image">
+                    <div class="project-details">
+                        <div class="project-title">Doha School</div>
+                        <div class="project-description">For Complete Details click on Download Button.</div>
+                        <a href="Projects/sample.pdf" target="_blank" class="btn btn-primary mt-3">Download PDF</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="project-card">
+                    <img src="Images/project1.jpg" alt="Completed Project 1" id="projects-picture" class="project-image">
+                    <div class="project-details">
+                        <div class="project-title">Al Rayyan</div>
+                        <div class="project-description">For Complete Details click on Download Button.</div>
+                        <a href="Projects/sample.pdf" target="_blank" class="btn btn-primary mt-3">Download PDF</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="project-card">
+                    <img src="Images/partner4.png" alt="Completed Project 1" id="projects-picture" class="project-image">
+                    <div class="project-details">
+                        <div class="project-title">Qatar Energy</div>
+                        <div class="project-description">Description of Completed Project 1.</div>
+                        <a href="Projects/sample.pdf" target="_blank" class="btn btn-primary mt-3">Download PDF</a>
+                    </div>
+                    </div>
+                </div>
+                <!-- Add more completed projects as needed -->
+            </div>
+            </div>
+        </section>
+
+  <!-- Ongoing Projects Section -->
+  <section class="projects">
+    <div class="container">
+      <h2 class="project-heading">Ongoing Projects</h2>
+      <div class="row">
+        <!-- Ongoing Project 1 -->
+        <div class="col-md-3">
+          <div class="project-card">
+            <img src="Images/image1.jpg" alt="Ongoing Project 1" id="projects-picture" class="project-image">
+            <div class="project-details">
+              <div class="project-title">Ongoing Project 1</div>
+              <div class="project-description">Description of Ongoing Project 1.</div>
+              <a href="Projects/sample.pdf" target="_blank" class="btn btn-primary mt-3">Download PDF</a>
+            </div>
+          </div>
+        </div>
+        <!-- Add more ongoing projects as needed -->
+      </div>
+    </div>
+  </section>
+
+        
+      </div>
+
+      <!-- Footer Section -->
+      <section class="footer">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h4>ADDRESS</h4>
+            <ul class="links">
+              <li><a href="#">Dass Trading, Contracting & Services</a></li>
+              <li><a href="#">Building No 13, Al Rayyan Area 13</a></li>
+              <li><a href="#">Jabir Bin Mahmood Street</a></li>
+              <li><a href="#">Zone 20, P.O.Box 76458, Doha, Qatar</a></li>
+              <!-- <li><a href="#">Collection</a></li> -->
+            </ul>
+          </div>
+  
+          <div class="footer-col">
+            <h4>CONTACT INFO</h4>
+            <ul class="links">
+              <li><a href="#">Email :  info@DassTrading.com</a></li>
+              <li><a href="#">Website: www.DassTrading.com</a></li>
+              <li><a href="#">Phone:   +974 12345678</a></li>
+              <li><a href="#">Fax:     +974 12345678</a></li>
+              <!-- <li><a href="#">Art Skills</a></li>
+              <li><a href="#">New Uploads</a></li> -->
+            </ul>
+          </div>
+  
+          <div class="footer-col">
+            <h4>OUR COMPANY</h4>
+            <ul class="links">
+              <li><a href="file:///C:/Users/AhmadJunaid/Desktop/Dass%20Trading%20&%20Contracting%20Services/aboutus.html">About Company</a></li>
+              <li><a href="file:///C:/Users/AhmadJunaid/Desktop/Dass%20Trading%20&%20Contracting%20Services/aboutus.html">Chairmans Message</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">FAQ's</a></li>
+              <!-- <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Media Kit</a></li> -->
+            </ul>
+          </div>
+  
+          <div class="footer-col">
+            <h4>IMPORTANT LINKS</h4>
+            <p>
+              Subscribe to our newsletter for a weekly dose
+              of news, updates, helpful tips, and
+              exclusive offers.
+            </p>
+            <form action="#">
+              <input type="text" placeholder="Your email" required>
+              <button type="submit">SUBSCRIBE</button>
+            </form>
+            <div class="icons">
+              <i class="fa-brands fa-facebook-f" style="color: #3b5998;"></i>
+              <i class="fa-brands fa-twitter" style="color:#1DA1F2;;"></i>
+              <i class="fa-brands fa-linkedin" style="color: #0077b5;"></i>
+              <i class="fa-brands fa-google-plus" style="color: #db4a39;"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+    </div>
+  
+    <!-- Link to Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,439 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+    padding: 0;
+  }
+
+/* Navbar Styles */
+.navbar {
+    background-color: transparent; /* Make the navbar transparent */
+    padding: 10px 20px;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease; /* Transition effect for background color */
+  }
+
+  .navbar:hover {
+    background-color: #663919;/* Change background color on hover */
+  }
+
+.navbar-brand {
+  float: left;
+  color: #fff;
+  margin-right: 15px;
+}
+
+
+
+.navbar-toggler-icon {
+    background-color: #663919; /* Color of the toggler icon for contrast */
+  }
+
+.navbar-nav {
+  float: right;
+}
+
+.navbar-nav a {
+    color:  white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-right: 30px;
+    display: inline-block;
+    transition: color 0.5s ease; /* Transition effect for text color */
+  }
+
+
+
+  
+.navbar-nav a:hover {
+  background-color: #333;
+  border-radius: 10px;
+  color: black; /* Change text color on hover */
+}
+
+/* Adjust for Navbar Height */
+
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .navbar-nav {
+    float: none;
+    text-align: center;
+  }
+
+  .navbar-nav a {
+    display: block;
+    text-align: left;
+    margin-top: 10px; /* Add space between links */
+  }
+
+  .navbar-toggler .navbar-brand {
+    display: none; /* Hide the logo in the toggler */
+  }
+
+  .navbar-toggler .navbar-nav {
+    float: right; /* Float toggler links to the right */
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    margin-right: 0;
+  }
+
+  .navbar-toggler {
+    margin: 10px 0;
+  }
+}
+
+
+
+  /* Picture Slider Styles */
+  .carousel-inner img {
+    width: 100%;
+    height: 100vh;
+  }
+
+  /* Adjust for Navbar Height */
+  body {
+    padding-top: 0; /* Adjusted for fixed navbar height */
+  }
+
+  .container-heading {
+      width: 100%;
+      /* background-color: silver; */
+      color: #663919;
+      background-color: white;    
+      padding: 50px 0;
+      justify-content: center;
+      transition: ease-in 1s;
+      
+  }
+      
+  .chairman-text {
+    font-size: 30px;
+      justify-content: center;
+      text-align: center;
+      padding: 50px;
+  }
+
+
+  /* About Us Section */
+  .about-us-section {
+    background-image: url("Images/aboutus1.jpg"); /* Background image for the about us section */
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 300px 100px;
+   
+  }
+
+  .about-us-button {
+    background-color: #663919;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 25px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition effect for background color */
+    border-radius: 10px;
+  }
+
+  .about-us-button:hover {
+    background-color: white;
+  }
+
+  .about-us-section h2{
+    font-size: 50px;
+    padding: 25px;
+  }
+
+  .about-us-section p{
+    font-size: 16px;
+    padding: 25px;
+  }
+
+  .projects-section h2{
+    color: #663919;
+    padding: 30px;
+  }
+
+  .projects-section {
+    background-color: #eee; /* Light gray background color for projects section */
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .project-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+
+  .project {
+    width: 22%; /* Adjust the width as needed for your layout */
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease; /* Transition effect for hover */
+  }
+
+  .project:hover {
+    transform: scale(1.05); /* Enlarge the card on hover */
+  }
+
+  .project img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+
+  .button-section {
+    text-align: center;
+    margin-top: 20px;
+    padding: 30px;
+  }
+
+  .view-all-projects-button {
+    border-radius: 10px;
+    background-color: #663919;
+    color: #fff;
+    font-weight: bold;
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition effect for background color */
+  }
+
+  .view-all-projects-button:hover {
+    background-color: white;
+  }
+
+      
+  .about-us-section {
+padding: 30px 20px; /* Adjust padding as needed for smaller screens */
+}
+
+.about-us-button {
+margin-top: 20px; /* Add some space between the text and the button */
+}
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .navbar-nav {
+      float: none;
+      margin-top: 10px;
+    }
+    
+    .navbar-toggler {
+      margin: 0;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .navbar-brand {
+      margin-right: 0;
+    }
+
+    .navbar-nav {
+      text-align: center;
+    }
+
+    .navbar-nav a {
+      display: block;
+      text-align: left;
+    }
+
+    .navbar-toggler {
+      margin: 10px 0;
+    }
+
+    .carousel-inner img {
+      height: auto;
+    }
+
+    .project {
+      width: 100%;
+    }
+  }
+
+   
+
+  /* Footer Section */
+
+  
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+  .footer {
+
+    bottom: 0;
+    max-width: auto;
+    width: 100%;
+    background: #663919;
+    border-radius: 6px;
+  }
+  
+  .footer .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3.5rem;
+    padding: 60px;
+  }
+  
+  .footer-row .footer-col h4 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  
+  .footer-col .links {
+    margin-top: 20px;
+  }
+  
+  .footer-col .links li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  
+  .footer-col .links li a {
+    text-decoration: none;
+    color: #bfbfbf;
+  }
+  
+  .footer-col .links li a:hover {
+    color: #fff;
+  }
+  
+  .footer-col p {
+    margin: 20px 0;
+    color: #bfbfbf;
+    max-width: 300px;
+  }
+  
+  .footer-col form {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .footer-col input {
+    height: 40px;
+    border-radius: 6px;
+    background: none;
+    width: 100%;
+    outline: none;
+    border: 1px solid #7489C6 ;
+    caret-color: #fff;
+    color: #fff;
+    padding-left: 10px;
+  }
+  
+  .footer-col input::placeholder {
+    color: #ccc;
+  }
+  
+   .footer-col form button {
+    background: #fff;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s ease;
+  }
+  
+  .footer-col form button:hover {
+    background: #cecccc;
+  }
+  
+  .footer-col .icons {
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+    cursor: pointer;
+  }
+  
+  
+  
+  .footer-col .icons i {
+    color: #afb6c7;
+  }
+  
+  .footer-col .icons i:hover  {
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      position: relative;
+      bottom: 0;
+      left: 0;
+      transform: none;
+      width: 100%;
+      border-radius: 0;
+    }
+  
+    .footer .footer-row {
+      padding: 20px;
+      gap: 1rem;
+    }
+  
+    .footer-col form {
+      display: block;
+    }
+  
+    .footer-col form :where(input, button) {
+      width: 100%;
+    }
+  
+    .footer-col form button {
+      margin: 10px 0 0 0;
+    }
+  }
+
+  .partner-list {
+    background-color: #f8f9fa; /* Set the background color */
+    padding: 40px 0; /* Adjust the padding */
+    text-align: center;
+  }
+
+  .partner-heading {
+    font-size: 35px;
+    color: #993300;
+    margin-bottom: 20px;
+  }
+
+  .partner-logos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .partner-logo {
+    width: 150px; /* Set the width of each logo */
+    margin: 20px 0; /* Adjust the margin */
+  }
