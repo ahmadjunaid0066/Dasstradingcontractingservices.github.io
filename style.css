@@ -12,9 +12,9 @@ body {
 
 /* Navbar Styles */
 .navbar {
-    background-color: transparent; /* Make the navbar transparent */
+    background-color: #663919; /* Make the navbar transparent */
     padding: 10px 20px;
-    position: absolute;
+    position: fixed;
     width: 100%;
     z-index: 1000;
     transition: background-color 0.3s ease; /* Transition effect for background color */
@@ -64,6 +64,7 @@ body {
 /* Responsive Styles */
 @media (max-width: 992px) {
   .navbar-nav {
+    background-color: #663919;
     float: none;
     text-align: center;
   }
