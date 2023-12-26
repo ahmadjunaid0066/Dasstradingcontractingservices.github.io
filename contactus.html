@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Company - About Us</title>
+  <title>Your Company - Contact Us</title>
   <!-- Link to Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- Custom Styles -->
@@ -57,14 +57,15 @@
     }
 
     .contact-us img {
-      width: 100%;
+        width: 100%;
       height: 60vh;
       object-fit: cover;
     }
 
-    /* About Us Styles */
+    /* Contact Us Styles */
     .container {
       margin-top: 70px; /* Adjusted margin-top for navbar height */
+      padding: 20px 0;
     }
 
     .contact-container {
@@ -74,15 +75,22 @@
     }
 
     .map-container,
-    .form-container {
+    .form-container,
+    .address-container {
       width: 100%;
-      max-width: 550px;
+      max-width: 100%;
       margin-bottom: 20px;
     }
 
     .map {
       width: 100%;
       height: 300px;
+    }
+
+    .map,
+    .form-container,
+    .address-container {
+      flex: 1;
     }
 
     h2 {
@@ -177,7 +185,7 @@
     }
 
     @media (max-width: 768px) {
-      .map-container, .form-container {
+      .map-container, .form-container, .address-container {
         width: 100%;
         max-width: none;
       }
@@ -186,7 +194,7 @@
 </head>
 <body>
 
-    <!-- Container for Navbar and About Us Section -->
+    <!-- Container for Navbar and Contact Us Section -->
     <div class="container-fluid">
   
       <!-- Navbar -->
@@ -226,48 +234,59 @@
         </div>
       </nav>
   
-      <!-- About Us Section -->
       <div class="contact-us">
         <img src="Images/contact2.jpeg" alt="">
         
-      <div class="container">
-        <h2>Contact Us</h2>
+        <div class="container">
+          <h2>Our Location</h2>
+        
+          <div class="contact-container">
+            <div class="map-container">
+              <!-- Add your map embed code or map API here -->
+              <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.530698069851!2d51.421902611011326!3d25.286367927989843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45d9cc8875cc19%3A0xe043f691cccbc6db!2sDass%20Trading%20contracting%20%26services!5e0!3m2!1sen!2sqa!4v1703360405547!5m2!1sen!2sqa" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </div>
+
+            <div class="form-container">
+                <h2 style="padding-top: 40px;">Send Us A Message</h2>
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="name">Your Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="email">Your Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                  </div>
+                </div>
       
-        <div class="contact-container">
-          <div class="map-container">
-            <!-- Add your map embed code or map API here -->
-            <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.530698069851!2d51.421902611011326!3d25.286367927989843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45d9cc8875cc19%3A0xe043f691cccbc6db!2sDass%20Trading%20contracting%20%26services!5e0!3m2!1sen!2sqa!4v1703360405547!5m2!1sen!2sqa" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-            <!-- Location Information -->
-            <ul class="links">
-              <br>
-              <li><h2>Our Location <br> </h2></li>
-              <li><p>Dass Trading, Contracting & Services</p></li>
-              <li><p>Building 387, Al Rayyan Area 530</p></li>
-              <li><p>Al Wajbah Street</p></li>
-              <li><p>Zone 53, Doha, Qatar</p></li>
-              <!-- <li><a href="#">Collection</a></li> -->
-            </ul>
-          </div> 
-          <div class="form-container">
-            <form>
-              
-              <label for="name">Your Name:</label>
-              <input type="text" id="name" name="name" required>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="phone">Your Phone:</label>
+                    <input type="text" class="form-control" id="phone" name="phone" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="subject">Subject:</label>
+                    <input type="text" class="form-control" id="subject" name="subject" required>
+                  </div>
+                </div>
       
-              <label for="email">Your Email:</label>
-              <input type="email" id="email" name="email" required>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <label for="message">Your Message:</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                  </div>
+                </div>
       
-              <label for="message">Your Message:</label>
-              <textarea id="message" name="message" rows="10" required></textarea>
+                <button class="contact-button" type="submit">Submit</button>
+              </form>
+            </div>
       
-              <button class="contact-button" type="submit">Submit</button>
-            </form>
-      
+            
             
           </div>
         </div>
       </div>
-    </div>
 
       <!-- Footer Section -->
       <section class="footer">
@@ -276,10 +295,9 @@
             <h4>ADDRESS</h4>
             <ul class="links">
               <li><a href="#">Dass Trading, Contracting & Services</a></li>
-              <li><a href="#">Building 387, Al Rayyan Area 530</a></li>
-              <li><a href="#">Al Wajbah Street</a></li>
-              <li><a href="#">Zone 53, Doha, Qatar</a></li>
-              <!-- <li><a href="#">Collection</a></li> -->
+              <li><a href="#">Building No 13, Al Rayyan Area 13</a></li>
+              <li><a href="#">Jabir Bin Mahmood Street</a></li>
+              <li><a href="#">Zone 20, P.O.Box 76458, Doha, Qatar</a></li>
             </ul>
           </div>
   
@@ -296,10 +314,10 @@
           <div class="footer-col">
             <h4>OUR COMPANY</h4>
             <ul class="links">
-              <li><a href="aboutus.html">About Company</a></li>
-              <li><a href="aboutus.html">Chairmans Message</a></li>
-              <li><a href="projects.html">Projects</a></li>
-              <li><a href="services.html">Services</a></li>
+              <li><a href="file:///C:/Users/AhmadJunaid/Desktop/Dass%20Trading%20&%20Contracting%20Services/aboutus.html">About Company</a></li>
+              <li><a href="file:///C:/Users/AhmadJunaid/Desktop/Dass%20Trading%20&%20Contracting%20Services/aboutus.html">Chairmans Message</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">FAQ's</a></li>
             </ul>
           </div>
   
