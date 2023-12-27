@@ -102,6 +102,31 @@ body {
     height: 100vh;
   }
 
+.carousel-caption {
+    background: rgba(255,255,255,0.9); /* Semi-transparent black background */
+    color: #663919; /* White text color */
+    padding: 40px; /* Padding for the caption */
+    margin-bottom: 300px;
+    display: none; /* Hide caption by default */
+    border-radius: 10px;
+  }
+
+  .carousel-caption h2{
+    font-weight: bold;
+  }
+
+  .carousel-caption {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .carousel-caption {
+      display: block !important; /* Ensure the caption is displayed on small screens */
+    }
+  }
+
   /* Adjust for Navbar Height */
   body {
     padding-top: 0; /* Adjusted for fixed navbar height */
