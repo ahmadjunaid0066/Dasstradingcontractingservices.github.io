@@ -106,7 +106,6 @@ body {
     background: rgba(255,255,255,0.9); /* Semi-transparent black background */
     color: #663919; /* White text color */
     padding: 40px; /* Padding for the caption */
-    margin-bottom: 300px;
     display: none; /* Hide caption by default */
     border-radius: 10px;
   }
