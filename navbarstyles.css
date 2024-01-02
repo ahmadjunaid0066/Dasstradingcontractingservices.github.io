@@ -14,7 +14,7 @@
 
 /* Navbar Styles */
 .navbar {
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
     background-color: #663919; /* Make the navbar transparent */
     padding: 10px 20px;
     position: fixed;
