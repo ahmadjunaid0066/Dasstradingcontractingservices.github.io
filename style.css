@@ -382,7 +382,7 @@
     padding: 25px 10px;
     font-size: 12px;
     cursor: pointer;
-    background: transparent;
+    background: #fff;
     transition: transform 0.5s, background 0.5s;
 }
 
