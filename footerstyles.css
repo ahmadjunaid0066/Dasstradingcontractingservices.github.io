@@ -1,0 +1,148 @@
+/* Footer Section//////////////////////////////////////////////////////////////////// */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.footer-section{
+    display: grid;
+    justify-content: end;
+    align-content: end;
+    min-height: 20vh;
+    background-color: #333;
+    color: #fff;
+    padding: 50px;
+}
+
+footer{
+    margin-top: 30px;
+    position:relative;
+    width: 100%;
+    height: auto;
+    background-color: #333;
+    color: #fff;
+    padding: 25px 50px;
+}
+
+footer .container5{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+footer .container5 .sec h2{
+    position: relative;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+footer .container5 .sec p{
+    color: #fff;
+}
+
+footer .container5 .sci{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+}
+
+footer .container5 .sci li{
+    list-style: none;
+}
+
+footer .container5 .sci li a{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-color: #333;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+
+}
+
+footer .container5 .sci li a i{
+    color: #fff;
+}
+
+footer .container5 .quicklinks,
+footer .container5 .address
+{
+    position: relative;
+}
+
+footer .container5 .quicklinks ul li, 
+footer .container5 .address ul li{
+    list-style: none;
+}
+
+footer .container5 .quicklinks ul li a,
+footer .container5 .address ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 10px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+footer .container5 .contact .info{
+    position: relative;
+    font-size: 14px;
+}
+
+footer .container5 .contact .info li{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 14px;
+}
+
+footer .container5 .contact .info li span{
+    color: #fff;
+    font-size: 14px;
+}
+
+footer .container5 .contact .info li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.copyright{
+    width: 100%;
+    padding: 20px 100px 30px;
+    text-align: center;
+    color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 991px){
+    footer{
+        padding: 40px;
+    }
+
+    footer .container5{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) ;
+        grid-gap: 20px;
+    }
+
+    .copyright{
+        padding: 20px 40px 30px;
+    }
+}
+
+@media (max-width: 768px){
+    footer .container5{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) ;
+        grid-gap: 20px;
+    }
+}
