@@ -6,8 +6,11 @@
   <title>Your Company - About Us</title>
   <!-- Link to Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/ddf78e4542.js" crossorigin="anonymous"></script>
   <!-- Custom Styles -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="navbarstyles.css">
+  <link rel="stylesheet" href="footerstyles.css">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -15,93 +18,8 @@
       padding: 0;
     }
 
-    /* Navbar Styles */
-    .navbar {
-      background-color: #663919;
-      padding: 10px 20px;
-      position: fixed;
-      width: 100%;
-      z-index: 1000;
-      transition: background-color 0.3s ease;
-    }
-
-    .navbar:hover {
-      background-color: #663919;
-    }
-
-    .navbar-brand {
-      float: left;
-      color: white;
-      margin-right: 15px;
-    }
-
-    .navbar-toggler-icon {
-      background-color: white;
-    }
-
-    .navbar-nav {
-      float: right;
-    }
-
-    .navbar-nav a {
-      color: white;
-      font-weight: bold;
-      text-decoration: none;
-      padding: 10px 15px;
-      display: inline-block;
-      transition: color 0.3s ease;
-    }
-
-    .navbar-nav a:hover {
-      background-color: #555;
-      color: black;
-    }
-
-   
-
-    @media (max-width: 992px) {
-      .navbar-nav {
-        background-color: #663919;
-        float: none;
-        text-align: center;
-      }
-
-      .navbar-nav a {
-        display: block;
-        text-align: left;
-        margin-top: 10px;
-      }
-
-      .navbar-toggler .navbar-brand {
-        display: none;
-      }
-
-      .navbar-toggler {
-        background-color: #333;
-      }
-
-      .navbar-toggler-icon {
-        background-color: #663919;
-      }
-
-      .navbar-toggler .navbar-nav {
-        float: right;
-      }
-    }
-
-    @media (max-width: 576px) {
-      .navbar-brand {
-        margin-right: 0;
-      }
-
-      .navbar-toggler {
-        margin: 10px 0;
-      }
-    }
-
     /* About Us Styles */
     .about-us {
-      
       text-align: left;
     }
 
@@ -159,9 +77,7 @@
         color: blue;
         text-decoration: underline;
     }
-
     
-
     .projects-container {
       display: flex;
       flex-wrap: wrap;
@@ -384,65 +300,64 @@
       </div>
 
       <!-- Footer Section -->
-      <section class="footer">
-        <div class="footer-row">
-          <div class="footer-col">
-            <h4>ADDRESS</h4>
-            <ul class="links">
-              <li><a href="#">Dass Trading, Contracting & Services</a></li>
-              <li><a href="#">Building 387, Al Rayyan Area 530</a></li>
-              <li><a href="#">Al Wajbah Street</a></li>
-              <li><a href="#">Zone 53, Doha, Qatar</a></li>
-              <!-- <li><a href="#">Collection</a></li> -->
-            </ul>
-          </div>
-  
-          <div class="footer-col">
-            <h4>CONTACT INFO</h4>
-            <ul class="links">
-              <li><a href="#">Email :  info@DassTrading.com</a></li>
-              <li><a href="#">Website: www.DassTrading.com</a></li>
-              <li><a href="#">Phone:   +974 12345678</a></li>
-              <li><a href="#">Fax:     +974 12345678</a></li>
-              <!-- <li><a href="#">Art Skills</a></li>
-              <li><a href="#">New Uploads</a></li> -->
-            </ul>
-          </div>
-  
-          <div class="footer-col">
-            <h4>OUR COMPANY</h4>
-            <ul class="links">
-              <li><a href="aboutus.html">About Company</a></li>
-              <li><a href="aboutus.html">Chairmans Message</a></li>
-              <li><a href="projects.html">Projects</a></li>
-              <li><a href="services.html">Services</a></li>
-            </ul>
-          </div>
-  
-          <div class="footer-col">
-            <h4>IMPORTANT LINKS</h4>
-            <p>
-              Subscribe to our newsletter for a weekly dose
-              of news, updates, helpful tips, and
-              exclusive offers.
-            </p>
-            <form action="#">
-              <input type="text" placeholder="Your email" required>
-              <button type="submit">SUBSCRIBE</button>
-            </form>
-            <div class="icons">
-              <i class="fa-brands fa-facebook-f" style="color: #3b5998;"></i>
-              <i class="fa-brands fa-twitter" style="color:#1DA1F2;;"></i>
-              <i class="fa-brands fa-linkedin" style="color: #0077b5;"></i>
-              <i class="fa-brands fa-google-plus" style="color: #db4a39;"></i>
+    <div class="footer-section">
+        <footer>
+            <div class="container5">
+                <div class="sec about">
+                    <h2>About Us</h2>
+                    <p style="justify-content: right;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quia nulla dicta vitae ad fugiat earum 
+                        possimus neque? Iure neque enim numquam inventore provident temporibus autem aspernatur asperiores, modi fuga!
+                    </p>
+                    <ul class="sci">
+                        <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-square-instagram"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="sec quicklinks">
+                    <h2>QuickLinks</h2>
+                    <ul>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">projects</a></li>
+                        <li><a href="#">CEO Message</a></li>
+                        <li><a href="#">Manager Message</a></li>
+                    </ul>
+                </div>
+                <div class="sec address">
+                    <h2>Address</h2>
+                    <ul>
+                        <li><a href="#">Dass Trading, Contracting & Services</a></li>
+                        <li><a href="#">Building 387, Al Rayyan Area 530</a></li>
+                        <li><a href="#">Al Wajbah Steet</a></li>
+                        <li><a href="#">Zone 53, Doha, Qatar</a></li>
+                    </ul>
+                </div>
+                <div class="sec contact">
+                    <h2>Contact Us</h2>
+                    <ul class="info">
+                        <li><span><i class="fa-solid fa-phone"></i></span> <p><a href="">+974 12345678</a></p>
+                        </li>
+                        <li><span>
+                            <i class="fa-solid fa-envelope"></i></span><p><a href="">info@DassTrading.com</a></p>
+                         </li>
+                         <li><span>
+                            <i class="fa-solid fa-fax"></i></span><p><a href="">55678</a></p>
+                         </li>
+                    </ul>
+                </div>
             </div>
-          </div>
+        </footer>
+        <div class="copyright">
+            <p>&copy; 2023 Dass Trading, Contracting & Services. All rights reserved.</p>
         </div>
-      </section>
-  
+    </div>
     </div>
 
     <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.body.classList.add("loaded");
+    });
          function showCompleted() {
       document.querySelectorAll('.project-card').forEach(card => {
         card.style.display = card.classList.contains('completed') ? 'block' : 'none';
