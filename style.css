@@ -319,125 +319,181 @@
 
 
 /* Projects Section............................................................................. */
-.projects-section h1{
-    color: #663919;
-    margin-top: 100px;
-	font-size: 30px;
-	text-align: center;
-	padding-top: 3px;
-	margin-bottom: 60px;
-	font-weight: 600;
-	position: relative;
-}
-  
-.projects-section h1::after{
-	content: '';
-	background: #663919;
-	width: 100px;
-	height: 5px;
-	position: absolute;
-	bottom: -5px;
-	left: 50%;
-	transform: translateX(-50%);
-}
+ .top-button{
+        font-size: 30px;
+        text-align: center;
+        padding-top: 10%;
+        margin-bottom: 60px;
+        font-weight: 600;
+        position: relative;
+        }
 
-.projects-section {
-    background-color: #eee; /* Light gray background color for projects section */
-    padding: 50px 20px;
-    text-align: center;
-}
+        .top-button::after{
+        content: '';
+        background: #663919;
+        width: 100px;
+        height: 5px;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        }
 
-.project-card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 20px;
-}
+        .projects{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+            bottom: 0;
+            background-color: #f8f8f8;
+            width: 100%;
+            
+        }
 
-.project {
-    width: 22%; /* Adjust the width as needed for your layout */
-    margin: 10px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    transition: transform 0.3s ease; /* Transition effect for hover */
-}
+        .container7 {
+            width: fit-content;
+            padding-bottom: 100px;
+            max-width: 2000px; /* Set your desired maximum width */
+            margin: 0; /* Center the container */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 100px 50px; /* Adjust the gap as needed */
+        }
 
-.project:hover {
-    transform: scale(1.05); /* Enlarge the card on hover */
-}
+        .container7 .card{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            width: 350px;
+            height: 300px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+            transition: 0.5s;
+        }
 
-  .project img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 10px;
-  }
+        .container7 .card:hover{
+            height: 450px;
+        }
 
-  .button-section {
-    text-align: center;
-    margin-top: 20px;
-    padding: 30px;
-  }
+        .container7 .card .imgBx{
+            position: absolute;
+            top: 0;
+            left: 20px;
+            overflow: hidden;
+            width: 300px;
+            height: 220px;
+            background: #333;
+            border-radius: 10px;
+            transition: 0.5s;
+        }
 
-  .view-all-projects-button {
-    border-radius: 10px;
-    background-color: #663919;
-    color: #fff;
-    font-weight: bold;
-    padding: 15px 30px;
-    font-size: 20px;
-    border: none;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Transition effect for background color */
-  }
+        .container7 .card:hover .imgBx{
+            top: -100px;
+            scale: 0.75;
+            box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+        }
 
-  .view-all-projects-button:hover {
-    background-color: white;
-  }
+        .container7 .card .imgBx img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .container7 .card .content-project{
+            position: absolute;
+            top: 252px;
+            width: 100%;
+            padding: 0 30px;
+            height: 35px;
+            overflow: hidden;
+            text-align: center;
+            transition: 0.5s;
+        }
+
+        .container7 .card:hover .content-project{
+            top: 130px;
+            height: 252px;
+        }
+
+        .container7 .card .content-project h2{
+            font-size: 30px;
+            font-weight: 600;
+            color: #663919;
+        }
+
+        .container7 .card .content-project p{
+            color: #333;
+        }
+
+        .container7 .card .content-project a{
+            position: relative;
+            top: 15px;
+            display: inline-block;
+            padding: 12px 25px;
+            background: #663919;
+            color: #fff;
+            font-weight: 500;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .view-all-btn {
+            margin-top: -30px; /* Adjust the margin as needed */
+            text-align: center;
+        }
+
+        .view-all-btn a {
+            padding: 12px 25px;
+            background: #663919;
+            color: #fff;
+            font-weight: 500;
+            text-decoration: none;
+            border-radius: 8px;
+        }
 
 
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .view-all-projects-button {
-	    border-radius: 10px;
-	    background-color: #663919;
-	    color: #fff;
-	    padding: 10px 15px;
-	    font-size: 16px;
-	    border: none;
-	    text-decoration: none;
-	    cursor: pointer;
-	    transition: background-color 0.3s ease; /* Transition effect for background color */
-  	}
-  }
+        @media (max-width: 992px) {
+        .container7{
+            width: auto;
+        }
+      .project-card {
+        width: calc(50% - 20px);
+      }
+      
 
-  @media (max-width: 576px) {
-    .carousel-inner img {
-      width: 100%;
-      height: 70vh;
-      object-fit: cover;
     }
 
-    .project {
-      width: 100%;
+    @media (max-width: 768px) {
+       
+        
+      .project-card {
+        width: calc(50% - 20px);
+      }
+
+      .project-details p {
+        display: none;
+      }
     }
 
-    .view-all-projects-button {
-    border-radius: 10px;
-    background-color: #663919;
-    color: #fff;
-    padding: 10px 15px;
-    font-size: 16px;
-    border: none;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Transition effect for background color */
-  }
-}
+    @media (max-width: 480px) {
+      .project-card {
+        width: calc(50%-20px);
+      }
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
 
 
