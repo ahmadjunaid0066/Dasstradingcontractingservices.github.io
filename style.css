@@ -37,21 +37,20 @@
 
 .carousel-caption {
 	max-width: 40%;
-	position:absolute; 
-	bottom:100px; 
+	position: relative; 
+	text-align: center;
+	
 	background: rgba(255,255,255,0.6); /* Semi-transparent black background */
 	color: #663919; /* White text color */
 	border-radius: 15px; 
+	font-weight: bold;
+	font-size: 25px;
 }
 
 .carousel-caption h2{
 	font-weight: bold;
 }
 
-.carousel-caption {
-	font-weight: bold;
-	font-size: 25px;
-}
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
